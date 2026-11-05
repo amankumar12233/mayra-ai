@@ -1,0 +1,1 @@
+"""Allowlisted operating-system integrations."""

@@ -1,0 +1,425 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1777.778 1000" width="1920" height="1080" role="img" aria-label="AARU Core HUD wallpaper" style="background:#020408">
+  <title>AARU CORE v1.0 - Voice Interface HUD</title>
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0a1a2e"/>
+      <stop offset="55%" stop-color="#050b16"/>
+      <stop offset="100%" stop-color="#020408"/>
+    </radialGradient>
+    <radialGradient id="coreGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4facfe" stop-opacity="0.35"/>
+      <stop offset="70%" stop-color="#4facfe" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4facfe" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="neonRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe"/>
+      <stop offset="100%" stop-color="#4facfe"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#4facfe" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffe2c9"/>
+      <stop offset="44%" stop-color="#e8b99d"/>
+      <stop offset="100%" stop-color="#b87562"/>
+    </linearGradient>
+    <linearGradient id="skinLight" x1="0%" y1="0%" x2="100%" y2="65%">
+      <stop offset="0%" stop-color="#fff0df" stop-opacity="0.68"/>
+      <stop offset="55%" stop-color="#f5cbb0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#8d4d48" stop-opacity="0.34"/>
+    </linearGradient>
+    <linearGradient id="hairShine" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#170b12" stop-opacity="0"/>
+      <stop offset="48%" stop-color="#b16a51" stop-opacity="0.46"/>
+      <stop offset="58%" stop-color="#e0a077" stop-opacity="0.54"/>
+      <stop offset="100%" stop-color="#241019" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="dressGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111111"/>
+      <stop offset="60%" stop-color="#080808"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+    <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#29151a"/>
+      <stop offset="38%" stop-color="#4a2424"/>
+      <stop offset="72%" stop-color="#241319"/>
+      <stop offset="100%" stop-color="#10090e"/>
+    </linearGradient>
+    <radialGradient id="avatarLight" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#ffd9a8" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#ffd9a8" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="barFill" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4facfe"/>
+      <stop offset="100%" stop-color="#00f2fe"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="strongGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="softBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="14"/>
+    </filter>
+    <clipPath id="coreClip">
+      <circle cx="500" cy="500" r="190"/>
+    </clipPath>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 L0 0 0 40" fill="none" stroke="#00f2fe" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+    <rect id="barShort" x="496" y="150" width="8" height="18" rx="2" fill="url(#barGrad)"/>
+    <rect id="barTall" x="496" y="142" width="8" height="34" rx="2" fill="url(#barGrad)"/>
+  </defs>
+
+  <rect width="1777.778" height="1000" fill="url(#bgGrad)"/>
+  <rect width="1777.778" height="1000" fill="url(#grid)" opacity="0.8"/>
+  <g transform="translate(-61.111 0) scale(1.9 1)">
+  <rect width="1000" height="1000" fill="#020408"/>
+  <rect width="1000" height="1000" fill="url(#bgGrad)"/>
+  <rect width="1000" height="1000" fill="url(#grid)"/>
+  <circle cx="500" cy="500" r="330" fill="url(#coreGlow)"/>
+
+  <g fill="none" stroke="#00f2fe" stroke-width="2" filter="url(#glow)" stroke-linecap="square">
+    <path d="M40 130 L40 40 L130 40"/>
+    <path d="M960 130 L960 40 L870 40"/>
+    <path d="M40 870 L40 960 L130 960"/>
+    <path d="M960 870 L960 960 L870 960"/>
+  </g>
+  <g fill="none" stroke="#4facfe" stroke-width="1" stroke-opacity="0.6">
+    <path d="M56 110 L56 56 L110 56"/>
+    <path d="M944 110 L944 56 L890 56"/>
+    <path d="M56 890 L56 944 L110 944"/>
+    <path d="M944 890 L944 944 L890 944"/>
+  </g>
+
+  <text x="500" y="82" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="26" font-weight="bold" letter-spacing="6" fill="#00f2fe" filter="url(#glow)">AARU CORE v1.0</text>
+
+  <g font-family="'Courier New', Consolas, monospace" filter="url(#glow)">
+    <rect x="70" y="100" width="210" height="100" rx="6" fill="#05131f" fill-opacity="0.82" stroke="#00f2fe" stroke-opacity="0.45"/>
+    <text x="90" y="150" font-size="34" font-weight="bold" letter-spacing="6" fill="#00f2fe">AARU</text>
+    <text x="90" y="174" font-size="11" letter-spacing="2" fill="#4facfe">AI ASSISTANT  v1.0</text>
+    <circle cx="96" cy="188" r="4" fill="#00f2fe">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="108" y="192" font-size="11" fill="#00f2fe" letter-spacing="2">ONLINE</text>
+  </g>
+
+  <g font-family="'Courier New', Consolas, monospace" filter="url(#glow)">
+    <rect x="720" y="100" width="210" height="100" rx="6" fill="#05131f" fill-opacity="0.82" stroke="#00f2fe" stroke-opacity="0.45"/>
+    <text x="905" y="150" font-size="28" font-weight="bold" text-anchor="end" fill="#00f2fe" letter-spacing="2">18:49 IST</text>
+    <text x="905" y="171" font-size="11" text-anchor="end" fill="#4facfe" letter-spacing="2">WED 04 NOV 2026</text>
+    <text x="905" y="187" font-size="11" text-anchor="end" fill="#4facfe" letter-spacing="2">UTC+05:30</text>
+  </g>
+
+  <g font-family="'Courier New', Consolas, monospace" filter="url(#glow)">
+    <rect x="70" y="230" width="210" height="150" rx="6" fill="#05131f" fill-opacity="0.82" stroke="#00f2fe" stroke-opacity="0.45"/>
+    <text x="86" y="252" font-size="11" fill="#4facfe" letter-spacing="2">SYSTEM</text>
+    <text x="86" y="286" font-size="11" fill="#4facfe">CPU</text>
+    <text x="264" y="286" font-size="11" text-anchor="end" fill="#00f2fe">23%</text>
+    <rect x="86" y="292" width="178" height="6" rx="3" fill="#0f2a40"/>
+    <rect x="86" y="292" width="41" height="6" rx="3" fill="url(#barFill)"/>
+    <text x="86" y="316" font-size="11" fill="#4facfe">RAM</text>
+    <text x="264" y="316" font-size="11" text-anchor="end" fill="#00f2fe">61%</text>
+    <rect x="86" y="322" width="178" height="6" rx="3" fill="#0f2a40"/>
+    <rect x="86" y="322" width="109" height="6" rx="3" fill="url(#barFill)"/>
+    <text x="86" y="346" font-size="11" fill="#4facfe">GPU</text>
+    <text x="264" y="346" font-size="11" text-anchor="end" fill="#00f2fe">45%</text>
+    <rect x="86" y="352" width="178" height="6" rx="3" fill="#0f2a40"/>
+    <rect x="86" y="352" width="80" height="6" rx="3" fill="url(#barFill)"/>
+  </g>
+
+  <g font-family="'Courier New', Consolas, monospace" filter="url(#glow)">
+    <rect x="70" y="400" width="210" height="130" rx="6" fill="#05131f" fill-opacity="0.82" stroke="#00f2fe" stroke-opacity="0.45"/>
+    <text x="86" y="422" font-size="11" fill="#4facfe" letter-spacing="2">NETWORK</text>
+    <text x="86" y="450" font-size="11" fill="#4facfe">DOWN</text>
+    <text x="264" y="450" font-size="11" text-anchor="end" fill="#00f2fe">248 Mb/s</text>
+    <text x="86" y="476" font-size="11" fill="#4facfe">UP</text>
+    <text x="264" y="476" font-size="11" text-anchor="end" fill="#00f2fe">32 Mb/s</text>
+    <text x="86" y="502" font-size="11" fill="#4facfe">PING</text>
+    <text x="264" y="502" font-size="11" text-anchor="end" fill="#00f2fe">11 ms</text>
+    <text x="86" y="520" font-size="10" fill="#4facfe" letter-spacing="1">SECURE TUNNEL · ACTIVE</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <rect x="70" y="550" width="210" height="120" rx="6" fill="#05131f" fill-opacity="0.82" stroke="#00f2fe" stroke-opacity="0.45"/>
+    <text x="86" y="572" font-family="'Courier New', Consolas, monospace" font-size="11" fill="#4facfe" letter-spacing="2">ACTIVITY</text>
+    <polyline points="86,645 106,634 124,640 142,620 160,630 178,612 196,626 214,604 232,616 264,598" fill="none" stroke="#00f2fe" stroke-width="2" stroke-linejoin="round"/>
+    <line x1="86" y1="655" x2="264" y2="655" stroke="#4facfe" stroke-opacity="0.4" stroke-width="1"/>
+  </g>
+
+  <g font-family="'Courier New', Consolas, monospace" filter="url(#glow)">
+    <rect x="720" y="230" width="210" height="150" rx="6" fill="#05131f" fill-opacity="0.82" stroke="#00f2fe" stroke-opacity="0.45"/>
+    <text x="736" y="252" font-size="11" fill="#4facfe" letter-spacing="2">WEATHER</text>
+    <text x="736" y="296" font-size="34" font-weight="bold" fill="#00f2fe">16°C</text>
+    <path d="M860 300 q-14 -20 8 -24 q6 -18 26 -12 q14 -10 20 8 q18 2 14 20 Z" fill="none" stroke="#00f2fe" stroke-width="2"/>
+    <g fill="none" stroke="#4facfe" stroke-width="1" stroke-opacity="0.7">
+      <rect x="736" y="318" width="34" height="46" rx="3"/>
+      <rect x="778" y="318" width="34" height="46" rx="3"/>
+      <rect x="820" y="318" width="34" height="46" rx="3"/>
+      <rect x="862" y="318" width="34" height="46" rx="3"/>
+      <rect x="904" y="318" width="20" height="46" rx="3"/>
+    </g>
+    <g fill="#00f2fe" font-size="9" text-anchor="middle">
+      <text x="753" y="334">14°</text>
+      <text x="795" y="334">15°</text>
+      <text x="837" y="334">17°</text>
+      <text x="879" y="334">16°</text>
+    </g>
+  </g>
+
+  <g font-family="'Courier New', Consolas, monospace" filter="url(#glow)">
+    <rect x="720" y="400" width="210" height="130" rx="6" fill="#05131f" fill-opacity="0.82" stroke="#00f2fe" stroke-opacity="0.45"/>
+    <text x="736" y="422" font-size="11" fill="#4facfe" letter-spacing="2">TASKS</text>
+    <rect x="736" y="434" width="10" height="10" fill="none" stroke="#00f2fe"/>
+    <text x="754" y="443" font-size="11" fill="#00f2fe">Reply to client mail</text>
+    <rect x="736" y="454" width="10" height="10" fill="none" stroke="#00f2fe"/>
+    <text x="754" y="463" font-size="11" fill="#00f2fe">Review build logs</text>
+    <rect x="736" y="474" width="10" height="10" fill="#00f2fe" fill-opacity="0.4" stroke="#00f2fe"/>
+    <text x="754" y="483" font-size="11" fill="#4facfe">Sync calendar</text>
+    <rect x="736" y="494" width="10" height="10" fill="none" stroke="#00f2fe"/>
+    <text x="754" y="503" font-size="11" fill="#00f2fe">Backup notes</text>
+    <text x="736" y="520" font-size="10" fill="#4facfe" letter-spacing="1">4 PENDING · 1 DONE</text>
+  </g>
+
+  <g font-family="'Courier New', Consolas, monospace" filter="url(#glow)">
+    <rect x="720" y="550" width="210" height="120" rx="6" fill="#05131f" fill-opacity="0.82" stroke="#00f2fe" stroke-opacity="0.45"/>
+    <text x="736" y="572" font-size="11" fill="#4facfe" letter-spacing="2">ASSISTANT</text>
+    <rect x="736" y="582" width="178" height="30" rx="8" fill="#0f2a40" stroke="#4facfe" stroke-opacity="0.6"/>
+    <text x="746" y="601" font-size="11" fill="#00f2fe">How can I help you?</text>
+    <rect x="736" y="622" width="120" height="24" rx="12" fill="none" stroke="#00f2fe"/>
+    <text x="748" y="638" font-size="10" fill="#00f2fe" letter-spacing="1">LISTENING...</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <circle cx="500" cy="500" r="455" fill="none" stroke="#4facfe" stroke-opacity="0.5" stroke-width="6" stroke-dasharray="3 15"/>
+    <circle cx="500" cy="500" r="440" fill="none" stroke="#00f2fe" stroke-opacity="0.25" stroke-width="1"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 500 500" to="360 500 500" dur="60s" repeatCount="indefinite"/>
+      <circle cx="500" cy="500" r="420" fill="none" stroke="#00f2fe" stroke-width="10" stroke-dasharray="120 40 60 40 200 30" stroke-opacity="0.85"/>
+    </g>
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="360 500 500" to="0 500 500" dur="45s" repeatCount="indefinite"/>
+      <circle cx="500" cy="500" r="395" fill="none" stroke="#4facfe" stroke-width="6" stroke-dasharray="60 20 10 20 140 35" stroke-opacity="0.8"/>
+    </g>
+  </g>
+
+  <circle cx="500" cy="500" r="372" fill="none" stroke="#4facfe" stroke-opacity="0.45" stroke-width="1.5"/>
+  <circle cx="500" cy="500" r="362" fill="none" stroke="#00f2fe" stroke-opacity="0.2" stroke-width="1" stroke-dasharray="2 6"/>
+
+  <g filter="url(#glow)">
+    <circle cx="500" cy="500" r="345" fill="none" stroke="#0f2a40" stroke-width="8"/>
+    <path d="M500 155 A345 345 0 0 1 793 325" fill="none" stroke="url(#neonRing)" stroke-width="8" stroke-linecap="round"/>
+    <path d="M793 325 A345 345 0 0 1 830 500" fill="none" stroke="#4facfe" stroke-opacity="0.35" stroke-width="8" stroke-linecap="round"/>
+  </g>
+
+  <g filter="url(#glow)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate" from="0 500 500" to="-360 500 500" dur="30s" repeatCount="indefinite"/>
+      <circle cx="500" cy="500" r="305" fill="none" stroke="#00f2fe" stroke-width="3" stroke-dasharray="30 12" stroke-opacity="0.7"/>
+      <circle cx="500" cy="500" r="298" fill="none" stroke="#4facfe" stroke-width="1" stroke-dasharray="1 4" stroke-opacity="0.8"/>
+    </g>
+  </g>
+
+  <g filter="url(#glow)">
+    <use href="#barShort" transform="rotate(0 500 500)"/>
+    <use href="#barTall" transform="rotate(15 500 500)"/>
+    <use href="#barShort" transform="rotate(30 500 500)"/>
+    <use href="#barTall" transform="rotate(45 500 500)"/>
+    <use href="#barShort" transform="rotate(60 500 500)"/>
+    <use href="#barTall" transform="rotate(75 500 500)"/>
+    <use href="#barShort" transform="rotate(90 500 500)"/>
+    <use href="#barTall" transform="rotate(105 500 500)"/>
+    <use href="#barShort" transform="rotate(120 500 500)"/>
+    <use href="#barTall" transform="rotate(135 500 500)"/>
+    <use href="#barShort" transform="rotate(150 500 500)"/>
+    <use href="#barTall" transform="rotate(165 500 500)"/>
+    <use href="#barShort" transform="rotate(180 500 500)"/>
+    <use href="#barTall" transform="rotate(195 500 500)"/>
+    <use href="#barShort" transform="rotate(210 500 500)"/>
+    <use href="#barTall" transform="rotate(225 500 500)"/>
+    <use href="#barShort" transform="rotate(240 500 500)"/>
+    <use href="#barTall" transform="rotate(255 500 500)"/>
+    <use href="#barShort" transform="rotate(270 500 500)"/>
+    <use href="#barTall" transform="rotate(285 500 500)"/>
+    <use href="#barShort" transform="rotate(300 500 500)"/>
+    <use href="#barTall" transform="rotate(315 500 500)"/>
+    <use href="#barShort" transform="rotate(330 500 500)"/>
+    <use href="#barTall" transform="rotate(345 500 500)"/>
+  </g>
+
+  <g transform="translate(236.842 0) scale(0.526316 1)">
+  <circle cx="500" cy="500" r="262" fill="none" stroke="#00f2fe" stroke-opacity="0.35" stroke-width="1"/>
+  <g filter="url(#glow)" stroke="#4facfe" stroke-width="3" stroke-linecap="round" stroke-opacity="0.85">
+    <line x1="500" y1="236" x2="500" y2="256"/>
+    <line x1="530" y1="240" x2="530" y2="262"/>
+    <line x1="560" y1="250" x2="560" y2="262"/>
+    <line x1="586" y1="262" x2="586" y2="282"/>
+    <line x1="604" y1="282" x2="604" y2="300"/>
+    <line x1="470" y1="240" x2="470" y2="262"/>
+    <line x1="440" y1="250" x2="440" y2="262"/>
+    <line x1="414" y1="262" x2="414" y2="282"/>
+    <line x1="396" y1="282" x2="396" y2="300"/>
+  </g>
+
+  <g stroke="#00f2fe" stroke-width="1" stroke-opacity="0.45" filter="url(#glow)">
+    <line x1="500" y1="110" x2="500" y2="890" stroke-opacity="0.12" stroke-dasharray="4 8"/>
+    <line x1="110" y1="500" x2="890" y2="500" stroke-opacity="0.12" stroke-dasharray="4 8"/>
+  </g>
+  <g fill="none" stroke="#00f2fe" stroke-width="1.5" filter="url(#glow)">
+    <path d="M500 40 L506 52 M500 40 L494 52"/>
+    <path d="M500 960 L506 948 M500 960 L494 948"/>
+  </g>
+
+  <circle cx="500" cy="500" r="235" fill="none" stroke="#4facfe" stroke-width="18" stroke-opacity="0.12" filter="url(#softBlur)"/>
+
+  <g filter="url(#strongGlow)">
+    <circle cx="500" cy="500" r="232" fill="none" stroke="url(#neonRing)" stroke-width="3"/>
+    <circle cx="500" cy="500" r="222" fill="none" stroke="#00f2fe" stroke-width="1" stroke-dasharray="20 6 4 6" stroke-opacity="0.9">
+      <animateTransform attributeName="transform" type="rotate" from="0 500 500" to="360 500 500" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="500" r="212" fill="none" stroke="#4facfe" stroke-width="2" stroke-dasharray="120 14 40 14" stroke-opacity="0.9">
+      <animateTransform attributeName="transform" type="rotate" from="360 500 500" to="0 500 500" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="500" r="200" fill="none" stroke="#00f2fe" stroke-width="1.5" stroke-opacity="0.7"/>
+  </g>
+
+  <circle cx="500" cy="500" r="196" fill="#041322" fill-opacity="0.85" stroke="#00f2fe" stroke-opacity="0.5" stroke-width="1"/>
+  <circle cx="500" cy="500" r="196" fill="url(#coreGlow)"/>
+
+  <g clip-path="url(#coreClip)" opacity="0.18">
+    <g stroke="#00f2fe" stroke-width="1">
+      <line x1="300" y1="330" x2="700" y2="330"/>
+      <line x1="300" y1="350" x2="700" y2="350"/>
+      <line x1="300" y1="370" x2="700" y2="370"/>
+      <line x1="300" y1="610" x2="700" y2="610"/>
+      <line x1="300" y1="630" x2="700" y2="630"/>
+      <line x1="300" y1="650" x2="700" y2="650"/>
+    </g>
+  </g>
+
+  <g clip-path="url(#coreClip)">
+    <g transform="translate(-50 -44.5) scale(1.1)">
+    <circle cx="500" cy="450" r="170" fill="url(#avatarLight)"/>
+    <path d="M500 338 C430 338 394 386 396 458 C398 518 375 582 360 700 L640 700 C625 582 602 518 604 458 C606 386 570 338 500 338 Z" fill="url(#hairGrad)"/>
+    <path d="M424 388 C406 438 420 483 405 535 C398 564 387 611 384 674" fill="none" stroke="url(#hairShine)" stroke-width="21" stroke-linecap="round" opacity="0.68"/>
+    <path d="M444 374 C426 421 439 466 424 516 C416 550 411 600 410 660" fill="none" stroke="#cf9270" stroke-opacity="0.26" stroke-width="4" stroke-linecap="round"/>
+    <path d="M572 392 C593 438 578 480 594 529 C604 562 615 613 618 673" fill="none" stroke="url(#hairShine)" stroke-width="18" stroke-linecap="round" opacity="0.58"/>
+    <path d="M555 374 C575 417 559 463 578 511 C590 546 594 596 594 656" fill="none" stroke="#d59a74" stroke-opacity="0.24" stroke-width="4" stroke-linecap="round"/>
+
+    <path d="M427 543 C440 523 458 516 476 514 L524 514 C542 516 560 523 573 543 C599 552 618 575 629 614 L652 700 L348 700 L371 614 C382 575 401 552 427 543 Z" fill="url(#dressGrad)"/>
+    <path d="M427 550 C447 535 463 530 478 529 L522 529 C537 530 553 535 573 550 L608 700 L392 700 Z" fill="#141414" opacity="0.48"/>
+    <path d="M465 520 C470 545 485 563 500 567 C515 563 530 545 535 520" fill="none" stroke="#e9b69a" stroke-opacity="0.7" stroke-width="10"/>
+    <path d="M470 519 C476 541 489 552 500 555 C511 552 524 541 530 519" fill="none" stroke="#f1d0b4" stroke-opacity="0.85" stroke-width="2"/>
+    <path d="M500 570 L500 698 M430 594 C443 628 451 663 454 698 M570 594 C557 628 549 663 546 698" fill="none" stroke="#777777" stroke-opacity="0.32" stroke-width="2"/>
+    <path d="M414 589 C432 572 450 566 462 565 M586 589 C568 572 550 566 538 565" fill="none" stroke="#555555" stroke-opacity="0.35" stroke-width="3"/>
+
+    <path d="M476 486 L476 526 C483 540 491 546 500 547 C509 546 517 540 524 526 L524 486 Z" fill="url(#skinGrad)"/>
+    <path d="M476 501 C483 508 490 511 500 511 C510 511 517 508 524 501 L524 526 C517 540 509 546 500 547 C491 546 483 540 476 526 Z" fill="#ab685d" opacity="0.18"/>
+
+    <ellipse cx="431" cy="444" rx="10" ry="19" fill="url(#skinGrad)"/>
+    <ellipse cx="569" cy="444" rx="10" ry="19" fill="url(#skinGrad)"/>
+    <ellipse cx="433" cy="445" rx="4" ry="9" fill="#a96c5a" opacity="0.45"/>
+    <ellipse cx="567" cy="445" rx="4" ry="9" fill="#a96c5a" opacity="0.45"/>
+
+    <path d="M500 352 C461 352 435 380 436 423 C436 463 448 491 470 511 C481 522 492 529 500 531 C508 529 519 522 530 511 C552 491 564 463 564 423 C565 380 539 352 500 352 Z" fill="url(#skinGrad)"/>
+    <path d="M500 356 C462 356 439 382 440 423 C440 461 452 487 472 506 C483 516 493 522 500 524 C507 522 517 516 528 506 C548 487 560 461 560 423 C561 382 538 356 500 356 Z" fill="url(#skinLight)"/>
+    <path d="M442 450 C448 470 458 486 472 497 M558 450 C552 470 542 486 528 497" fill="none" stroke="#9d5d54" stroke-opacity="0.2" stroke-width="3"/>
+    <path d="M448 452 C455 460 465 462 476 458 M552 452 C545 460 535 462 524 458" fill="none" stroke="#c27f6c" stroke-opacity="0.2" stroke-width="5"/>
+
+    <path d="M446 418 C455 409 469 407 481 414" fill="none" stroke="#43252a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M519 414 C531 407 545 409 554 418" fill="none" stroke="#43252a" stroke-width="5" stroke-linecap="round"/>
+    <path d="M449 436 C458 428 474 428 485 436 C477 445 459 446 449 436 Z" fill="#fff1e7"/>
+    <path d="M515 436 C526 428 542 428 551 436 C541 446 523 445 515 436 Z" fill="#fff1e7"/>
+    <ellipse cx="468" cy="437" rx="6" ry="8" fill="#704334"/>
+    <ellipse cx="532" cy="437" rx="6" ry="8" fill="#704334"/>
+    <ellipse cx="468" cy="438" rx="3" ry="5" fill="#24171b"/>
+    <ellipse cx="532" cy="438" rx="3" ry="5" fill="#24171b"/>
+    <circle cx="470" cy="434" r="2" fill="#fff8ef"/>
+    <circle cx="534" cy="434" r="2" fill="#fff8ef"/>
+    <path d="M449 436 C459 426 475 426 485 436 M515 436 C525 426 541 426 551 436" fill="none" stroke="#392128" stroke-width="3" stroke-linecap="round"/>
+    <path d="M451 441 L447 445 M456 444 L453 449 M545 444 L548 449 M550 441 L553 445" stroke="#392128" stroke-width="1.5" stroke-linecap="round"/>
+    <path d="M447 453 C457 463 469 465 479 460 M553 453 C543 463 531 465 521 460" fill="none" stroke="#d18e7e" stroke-opacity="0.3" stroke-width="2"/>
+    <ellipse cx="454" cy="462" rx="12" ry="6" fill="#d77f79" opacity="0.2"/>
+    <ellipse cx="546" cy="462" rx="12" ry="6" fill="#d77f79" opacity="0.2"/>
+    <path d="M500 438 C498 455 492 468 493 473 C496 477 502 477 506 474" fill="none" stroke="#9c6054" stroke-opacity="0.62" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M486 489 C491 484 496 483 500 486 C504 483 509 484 514 489 C510 496 505 499 500 499 C495 499 490 496 486 489 Z" fill="#9d4c51"/>
+    <path d="M490 489 Q500 492 510 489 M492 495 Q500 498 508 495" fill="none" stroke="#f0b4a1" stroke-opacity="0.78" stroke-width="1.5" stroke-linecap="round"/>
+
+    <path d="M435 430 C431 392 449 361 480 350 C510 339 545 352 558 383 C563 396 564 411 560 425 C554 413 548 400 539 389 C523 380 510 369 501 355 C492 375 477 386 458 391 C452 405 447 419 446 436 C440 438 437 435 435 430 Z" fill="url(#hairGrad)"/>
+    <path d="M500 354 C490 374 476 386 458 392 M504 357 C516 376 532 387 542 392 M485 359 C468 375 457 391 451 411 M515 361 C535 378 547 396 552 415" fill="none" stroke="#b8775d" stroke-opacity="0.47" stroke-width="3" stroke-linecap="round"/>
+    <path d="M436 416 C431 453 440 482 452 502 M564 414 C568 449 561 478 548 501" fill="none" stroke="#d49a75" stroke-opacity="0.34" stroke-width="4" stroke-linecap="round"/>
+    <path d="M414 474 C417 532 399 587 393 650 M586 473 C583 532 601 587 607 650" fill="none" stroke="#b7745d" stroke-opacity="0.38" stroke-width="5" stroke-linecap="round"/>
+
+    <path d="M429 442 C421 447 421 458 429 463" fill="none" stroke="#62d9ec" stroke-opacity="0.7" stroke-width="2"/>
+    <circle cx="429" cy="453" r="3" fill="#62d9ec"/>
+    </g>
+  </g>
+
+  <g fill="none" stroke="#00f2fe" stroke-linecap="round" filter="url(#glow)">
+    <path d="M566 452 Q578 466 566 480" stroke-width="2.5" stroke-opacity="0.9"/>
+    <path d="M580 440 Q598 466 580 492" stroke-width="2" stroke-opacity="0.6"/>
+    <path d="M594 428 Q618 466 594 504" stroke-width="1.5" stroke-opacity="0.35"/>
+  </g>
+
+  <g stroke="#00f2fe" stroke-width="1" stroke-opacity="0.1" clip-path="url(#coreClip)">
+    <line x1="310" y1="500" x2="690" y2="500"/>
+    <line x1="500" y1="310" x2="500" y2="690"/>
+  </g>
+
+  <g fill="none" stroke="#00f2fe" stroke-width="2" filter="url(#glow)">
+    <path d="M300 300 L300 282 M300 300 L318 300"/>
+    <path d="M700 300 L700 282 M700 300 L682 300"/>
+    <path d="M300 700 L300 718 M300 700 L318 700"/>
+    <path d="M700 700 L700 718 M700 700 L682 700"/>
+  </g>
+
+  <text x="500" y="728" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="20" font-weight="bold" letter-spacing="10" fill="#00f2fe" filter="url(#glow)">AARU</text>
+  </g>
+
+  <g font-family="'Courier New', Consolas, monospace" font-size="11" fill="#4facfe" letter-spacing="1" filter="url(#glow)">
+    <text x="90" y="780">VOICE.ID  AARU-01</text>
+    <text x="90" y="798">PITCH     STABLE</text>
+    <text x="90" y="816">SAMPLE    48kHz</text>
+  </g>
+  <g font-family="'Courier New', Consolas, monospace" font-size="11" fill="#4facfe" letter-spacing="1" text-anchor="end" filter="url(#glow)">
+    <text x="910" y="780">MODE  SING / TALK</text>
+    <text x="910" y="798">CPU   18%</text>
+    <text x="910" y="816">MEM   2.4GB</text>
+  </g>
+
+  <g filter="url(#glow)">
+    <rect x="290" y="836" width="420" height="64" rx="10" fill="#05131f" fill-opacity="0.82" stroke="#00f2fe" stroke-opacity="0.45"/>
+    <g fill="none" stroke="#00f2fe" stroke-width="1.5">
+      <rect x="310" y="848" width="40" height="40" rx="8"/>
+      <rect x="370" y="848" width="40" height="40" rx="8"/>
+      <rect x="430" y="848" width="40" height="40" rx="8"/>
+      <rect x="490" y="848" width="40" height="40" rx="8"/>
+      <rect x="550" y="848" width="40" height="40" rx="8"/>
+      <rect x="610" y="848" width="40" height="40" rx="8"/>
+    </g>
+    <g fill="#00f2fe" fill-opacity="0.25">
+      <circle cx="330" cy="868" r="8"/>
+      <circle cx="390" cy="868" r="8"/>
+      <circle cx="450" cy="868" r="8"/>
+      <circle cx="510" cy="868" r="8"/>
+      <circle cx="570" cy="868" r="8"/>
+      <circle cx="630" cy="868" r="8"/>
+    </g>
+  </g>
+  <text x="500" y="980" text-anchor="middle" font-family="'Courier New', Consolas, monospace" font-size="14" font-weight="bold" letter-spacing="2" fill="#00f2fe" filter="url(#glow)">CREATED BY KRISHNA KANT • MADE IN INDIA</text>
+  </g>
+</svg>

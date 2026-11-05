@@ -1,0 +1,10 @@
+faster-whisper>=1.1,<2
+vosk>=0.3.45,<1
+sounddevice>=0.5,<1
+gTTS>=2.5,<3
+psutil>=6,<8
+Pillow>=10,<12
+pyautogui>=0.9.54,<1
+screen-brightness-control>=0.23,<1
+pycaw>=20240210; sys_platform == "win32"
+python-dotenv>=1,<2
